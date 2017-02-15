@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+body{
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+/*头部部分*/
+.header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.headerImg{
+    height: 200px;
+    width: 33.3%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.headimg{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0.6;
+}
+
+/*导航部分*/
+
+.nav{
+    background-color: #21323A;
+    height: 30px;
+    line-height: 30px;
+
+}
+.nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.nav li a{
+    font-weight: 700;
+}
+
+/*轮播图列表部分*/
+
+.lb-content{
+    margin-top: 20px;
+    height: 450px;
+}
+
+
+/*左边部分*/
+.leftBox{
+    height: 450px;
+    width: 20%;
+    float: left;
+}
+
+
+.leftBox-top{
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    transition: all 2s;
+    position: relative;
+    background: url("../img/001.gif") no-repeat center/100% 220px;
+}
+.leftBox-top::before{
+    content: "惊 悚";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    top: -110px;
+    transition: all 1s;
+}
+.leftBox-top::after{
+    content: "故 事";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    bottom: -110px;
+    transition: all 1s;
+}
+.leftBox-top:hover{
+    box-shadow:0 10px 30px #910000;
+    padding-top: -10px;
+    border-radius: 200px;
+}
+.leftBox-top:hover:before{
+    top: 0px;
+}
+.leftBox-top:hover:after{
+    bottom: 0px;
+}
+
+
+.leftBox-bottom{
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 1s;
+    position: relative;
+    background: url("../img/003.gif") no-repeat center/100% 220px;
+}
+.leftBox-bottom::before{
+    content: "血 腥";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    top: -110px;
+    transition: all 1s;
+}
+.leftBox-bottom::after{
+    content: "图 片";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    bottom: -110px;
+    transition: all 1s;
+}
+.leftBox-bottom:hover{
+    box-shadow:0 10px 30px #910000;
+    padding-top: -10px;
+    border-radius: 200px;
+}
+.leftBox-bottom:hover:before{
+    top: 0;
+}
+.leftBox-bottom:hover:after{
+    bottom: 0;
+}
+
+
+/*中间部分*/
+.centerBox{
+    width: 58%;
+    height: 450px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-left:1%;
+}
+.centerBox li{
+    float: left;
+    width: 100%;
+    height: 450px;
+}
+.cb-img{
+    width: 100%;
+    height: 450px;
+}
+.cBox-left{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #cccccc;
+    top: 40%;
+    left: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+.cBox-right{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #cccccc;
+    top: 40%;
+    right: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/*右边部分*/
+.rightBox{
+    width:20%;
+    height: 450px;
+    float: right;
+}
+
+.rightBox-top{
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    transition: all 2s;
+    position: relative;
+    background: url("../img/002.gif") no-repeat center/100% 220px;
+}
+.rightBox-top::before{
+    content: "恐 怖";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    top: -110px;
+    transition: all 1s;
+}
+.rightBox-top::after{
+    content: "音 乐";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    bottom: -110px;
+    transition: all 1s;
+
+}
+.rightBox-top:hover{
+    box-shadow:0 10px 30px #910000;
+    padding-top: -10px;
+    border-radius: 200px;
+}
+.rightBox-top:hover:before{
+    top: 0px;
+}
+.rightBox-top:hover:after{
+    bottom: 0px;
+}
+
+
+.rightBox-bottom{
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 2s;
+    /*overflow: hidden;*/
+    position: relative;
+    background: url("../img/004.gif") no-repeat center/100% 220px;
+}
+.rightBox-bottom::before{
+    content: "经 典";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    top: -110px;
+    transition: all 1s;
+}
+.rightBox-bottom::after{
+    content: "鬼 片";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: #cccccc;
+    line-height: 110px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    opacity: 0.3;
+    bottom: -110px;
+    transition: all 1s;
+}
+.rightBox-bottom:hover{
+    box-shadow:0 10px 30px #910000;
+    padding-top: -10px;
+    border-radius: 200px;
+}
+.rightBox-bottom:hover:before{
+    top: 0;
+}
+.rightBox-bottom:hover:after{
+    bottom: 0;
+}
+
+
+/*文字内容部分*/
+.wz-content{
+    position: relative;
+}
+.wz-content img{
+    opacity: 0.2;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*初始化*/
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #910000;
+}
+a {
+    color: #910000;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+input,img{
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+i,s{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.w{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}

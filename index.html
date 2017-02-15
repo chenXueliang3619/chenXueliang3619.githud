@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>恐怖惊悚网</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.12.2.js"></script>
+    <!--[if lte IE 6]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+        $(function () {
+            $(".header").mouseover(function () {
+                $(".headerImg").fadeOut(4000, function () {
+                    $(".headerImg").fadeIn(1500);
+                });
+            });
+            $(".centerBox").mouseover(function () {
+                $(".cBox-left").css({"opacity":0.5});
+                $(".cBox-right").css({"opacity":0.5});
+            });
+            $(".centerBox").mouseout(function () {
+                $(".cBox-left").css("opacity",0);
+                $(".cBox-right").css("opacity",0);
+            });
+        });
+    </script>
+</head>
+<body>
+<audio src="music/网络歌手-原版第十三双眼睛残曲.mp3" autoplay loop></audio>
+<div class="box">
+    <!--头部部分-->
+    <div class="header clearfix">
+        <a href="#"><img class="headerImg" src="img/007.jpg" alt="j007"></a>
+
+        <a href="#"><img class="headerImg" src="img/001.jpg" alt="j001"></a>
+
+        <a href="#"><img class="headerImg" src="img/003.jpg" alt="j003"></a>
+        <img class="headimg" src="img/001.jpg" alt="">
+    </div>
+    <!--导航部分-->
+    <div class="nav clearfix w">
+        <ul>
+            <li><a href="#"> 惊 悚 故 事 </a></li>
+            <li><a href="#"> 血 腥 图 片 </a></li>
+            <li><a href="#"> 恐 怖 音 乐 </a></li>
+            <li><a href="#"> 经 典 鬼 片 </a></li>
+        </ul>
+    </div>
+    <!--轮播图列表部分-->
+    <div class="lb-content w">
+
+        <!--左边部分-->
+        <div class="leftBox">
+            <div class="leftBox-top"></div>
+            <div class="leftBox-bottom"></div>
+        </div>
+
+
+        <!--中间部分-->
+        <div class="centerBox">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/005.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/002.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/006.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/005.gif" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/008.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="cb-img" src="img/006.gif" alt="">
+                    </a>
+                </li>
+            </ul>
+            <span class="cBox-left"><a href="#"> < </a></span>
+            <span class="cBox-right"><a href="#"> > </a></span>
+            <div class="num">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--右侧部分-->
+        <div class="rightBox">
+            <div class="rightBox-top"></div>
+            <div class="rightBox-bottom"></div>
+        </div>
+
+    </div>
+
+    <!--文字内容部分-->
+    <div class="wz-content w">
+        <img src="img/004.jpg" alt="">
+    </div>
+
+</div>
+</body>
+</html>
